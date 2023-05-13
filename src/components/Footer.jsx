@@ -1,17 +1,6 @@
-import { useState,useEffect } from "react"
+
 export default function Footer(){
-  const [quotes,setQuotes] = useState()
-  const [load,setLoad] = useState(true)
-  useEffect(()=>{
-    async function getData(){
-      const request = await fetch('https://api.ibeng.tech/api/random/quotes?apikey=tamvan')
-      const response = await request.json()
-      
-      setQuotes(response.result)
-      setLoad(false)
-    }
-    getData()
-  },[])
+  
   return (
       <footer className="bg-slate-800 pt-24 pb-12 ">
       <div className="container">
@@ -30,11 +19,7 @@ export default function Footer(){
             <ul className="text-slate-300">
               <li>
                 <p className="inline-block text-base hover:text-primary mb-3">
-                {load ?  <i>loading...</i> : (`
-                      
-                     "${quotes.quotes}" ~${quotes.author}
-                      
-                      `) }
+                "Jangan takut untuk gagal. Gagal bukanlah akhir dari segalanya. Dari kegagalan, kita bisa belajar dan menjadi lebih kuat." ~Elon Musk
                 </p>
               </li>
             </ul>

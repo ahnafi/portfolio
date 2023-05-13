@@ -41,7 +41,7 @@ function Home (){
               />
               <Btnbrand 
               img={ig}
-              url="https://instagram.com/ahnafi.s?igshid=ZDdkNTZiNTM="
+              url="https://instagram.com/ahnafi.s"
               alt="facebook"
               />
               <Btnbrand 
